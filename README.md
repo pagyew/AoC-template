@@ -14,4 +14,7 @@ You can run the script using the command `node go [next|last]`
   - `last` will open the last day's file
 
 ### Debugging
-To debug and view results when solving the problem, you can use `nodemon days/[day]/[day].js`
+- In [day].txt you can find the input for the problem
+- To debug and view results when solving the problem, you can use `nodemon days/[day]/[day].js`
+- You can also use `node days/[day]/[day].js` to run the code without the need to restart the server
+- Directory name for the day less than 10 should be prefixed with `0` for right alignment
