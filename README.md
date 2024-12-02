@@ -12,6 +12,7 @@ Use this template to generate environment for solving [Adventure of Code](https:
 You can run the script using the command `node go [next|last]`
   - `next` will create a new directory for the next day and open the file
   - `last` will open the last day's file
+  - Write your solve function in `solve.js` (it's open automatically when you run the script) and return answer
 
 ### Debugging
 - In `[day].txt` you can find the input for the problem

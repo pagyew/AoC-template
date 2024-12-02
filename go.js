@@ -11,10 +11,10 @@ if (!commands.includes(type)) {
 
 const command = spawnSync('node', ['--env-file=.env', './utils/inputs.js', type])
 const result = command.stdout.toString().trim().split('\n')
-const scriptFile = result.pop()
+const solveFile = result.pop()
 
 console.log(result.join('\n'));
 
-execSync(`code ${scriptFile}`)
+execSync(`code ${solveFile}`)
 
-console.log(`${scriptFile} opened`);
+console.log(`${solveFile} opened`);

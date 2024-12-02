@@ -10,7 +10,9 @@ const pday = String(day).padStart(2, 0)
 
 const inputFile = `days/${pday}/${day}.txt`
 const scriptFile = `days/${pday}/${day}.js`
-const templateFile = `utils/template.js`
+const solveFile = `days/${pday}/solve.js`
+const wrapperTemplateFile = `utils/wrapper-template.js`
+const solveTemplateFile = `utils/solve-template.js`
 
 const {AOC_SESSION, AOC_YEAR} = process.env
 const cookie = `session=${AOC_SESSION}`
@@ -36,9 +38,16 @@ const cookie = `session=${AOC_SESSION}`
     if (existsSync(scriptFile)) {
       console.log(`${day}.js already copied`);
     } else {
-      copyFileSync(templateFile, scriptFile)
+      copyFileSync(wrapperTemplateFile, scriptFile)
       console.log(`${day}.js copied`);
     }
 
-    console.log(scriptFile)
+    if (existsSync(solveFile)) {
+      console.log(`solve.js already copied`);
+    } else {
+      copyFileSync(solveTemplateFile, solveFile)
+      console.log(`solve.js copied`);
+    }
+
+    console.log(solveFile)
   })();
