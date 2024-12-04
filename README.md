@@ -1,5 +1,5 @@
 # AoC-template
-Use this template to generate environment for solving [Adventure of Code](https://adventofcode.com/) puzzles
+Use this template to generate environment for solving [Advent of Code](https://adventofcode.com/) puzzles
 
 ## How to use
 
