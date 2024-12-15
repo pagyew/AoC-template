@@ -19,7 +19,7 @@ You can run the script using the command `node go [next|last]`
 ```
 const nerdamer = require('../../utils/nerdamer');
 ```
-[link to original repository](https://github.com/evanw/nerdamer)
+[link to original repository](https://github.com/jiggzson/nerdamer)
 
 ### Debugging
 - In `[day].txt` you can find the input for the problem
