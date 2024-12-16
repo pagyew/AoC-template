@@ -15,6 +15,12 @@ You can run the script using the command `node go [next|last]`
   - Write your solve function in `solve.js` (it's open automatically when you run the script) and return answer
 
 ### Utils
+- `heap` – Used for priority queue.
+```
+const Heap = require('../../utils/heap');
+
+const heap = new Heap(compareFunction, initialArray);
+```
 - `nerdamer` – Used for solving equations.
 ```
 const nerdamer = require('../../utils/nerdamer');
